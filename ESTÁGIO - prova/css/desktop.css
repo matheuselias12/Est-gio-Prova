@@ -1,0 +1,244 @@
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family:'FonteDados';
+  src: url(../Fonts/HelveticaUltraLt_0.ttf);
+}
+@font-face {
+  font-family:'robotoregular';
+  src: url(../Fonts/Roboto-Regular_0.ttf);
+}
+header {
+  display: block;
+  height: 820px;
+  width: 100%;
+  background-image: url(../imagens/index-image.jpg);
+  background-size: cover;
+
+}
+
+.navbar .nav{
+  justify-content: flex-end;
+  display: flex;
+  width: 94%;
+  padding: 98px;
+  position: absolute;
+  top: -53px;
+  left: 29px;
+}
+.navbar .nav .nav-item{
+  font-family:'FonteDados';
+  padding: 12px;
+  list-style: none;
+  text-decoration: none;
+}
+.navbar .nav .nav-item .nav-link{
+  color: aliceblue;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+
+}
+.logo{
+  height: 0px;
+  width: 205px;
+  display: block;
+  position: relative;
+  top: 49px;
+  left: 325px;
+}
+
+.dados{
+  position: absolute;
+  margin-top: 256px;
+  top: -14px;
+  display: block;
+  width: 672px;
+  left: 36px;
+  height: -46px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.dados h1{
+  height: 12px;
+  position: relative;
+  left: 258px;
+  color: aliceblue;
+  font-size: 80px;
+  padding: 12px;
+  font-family: 'Helvetica Neue', sans-serif;
+  
+}
+.dados p{
+  color: aliceblue;
+  font-size: 31px;
+  padding: 14px;
+  position: absolute;
+  margin-top: 76px;
+  left: 264px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+main{
+  height:1100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container{
+  height:600px;
+  width: 100%;
+  background-color:#29abe2;
+}
+.cadastro{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 296px;
+  position: relative;
+  top: 120px;
+}
+.cadastro h2{
+  position: absolute;
+  top: -65px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 48px;
+  color: #ffff;
+}
+input{
+  width:500px;
+  margin-top: 12px;
+  border-bottom: #ffffff solid 0.10px ;
+  background-color: #29abe2;
+  color: aliceblue;
+  padding: 8px;
+  font-size: 15px;
+  font-family:'robotoregular';
+}
+input:hover{
+  background-color: rgba(165, 42, 42, 0);
+}
+span{
+  position: relative;
+  top: 12px;
+  font-size: 15px;
+  color: #ffff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.btn-cadastrar{
+  position: relative;
+  width: 100%;
+  margin-top: 43px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+}
+.btn-cadastrar button{
+  position: relative;
+  width: 50%;
+  margin-top: 43px;
+  height: 54px;
+  background-color: #012d51;
+  color: #29abe2;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.tabela h3{
+  width: 100%;
+  color: #29abe2;
+  height: 107px;
+  display: flex;
+  font-size: 36px;
+  margin-top: 90px;
+  justify-content: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.cortabela{
+  justify-content: center;
+  position: relative;
+  top: -130px;
+  display: flex;
+}
+
+
+table{
+  margin-top: 125px;
+  border-collapse: collapse;
+  font-family:'robotoregular';
+}
+
+td{
+  text-align: center;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border-collapse: collapse;
+  font-size: 12px;
+  width: 195px;
+  color: #979797;
+  border-top: 1px solid #29aae298;
+  border-left: 1px solid #29aae298;
+  font-family:'robotoregular';
+}
+th{
+  text-align: center;
+  color: #012d51;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid #29aae298;
+  border-bottom: 1px solid #29aae298;
+  font-family:'robotoregular';
+
+}
+.th {
+  border-collapse: collapse;
+  border-right: 0px solid #000000;
+}
+.td {
+  border-collapse: collapse;
+  border-bottom: 0px solid #000000;
+}
+footer{
+  background-image: url(../imagens/rodape-desktop.jpg);
+  height: 200px;
+  background-size: cover;
+}
+footer .rodape{
+  display: flex;
+  position: relative;
+  top: 12px;
+  flex-flow: column-reverse;
+  text-align: center;
+  color: azure;
+  font-family:'robotoregular';
+}
+
+footer .rodape p{
+  font-size: 15px;
+}
+header ul {
+  display: none;
+}
+#btn-bars {
+  display: none;
+}
+#page-up{
+  color: #ffffff;
+  width: 50px;
+  background-color: #29aae273;
+  height: 50px;
+  display: flex;
+  left: en;
+  margin-left: 87%;
+  font-size: 50px;
+  border-radius: 81%;
+  justify-content: center;
+  position: absolute;
+  top: 113pc;
+}
+.ccc{
+  display: none;
+}

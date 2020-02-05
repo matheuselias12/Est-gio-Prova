@@ -1,0 +1,436 @@
+
+/*Tamanho Tablet*/
+
+@font-face {
+  font-family:'FonteDados';
+  src: url(../Fonts/HelveticaUltraLt_0.ttf);
+}
+@media (max-width: 1000px){
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+header {
+  display: block;
+  height: 430px;
+  width: 100%;
+  background-image: url(../imagens/index-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+table {
+  margin-top: 125px;
+  border-collapse: collapse;
+  font-family: 'tabela';
+  position: relative;
+  width: 91%;
+  height: 169px;
+}
+td {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(255, 255, 255);
+  border-collapse: collapse;
+  font-size: 11px;
+  width: 195px;
+  color: #979797;
+  border-top: 1px solid #29aae298;
+  border-left: 1px solid #29aae298;
+}
+th {
+  text-align: center;
+  color: #012d51;
+  padding: 7px;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid #29aae298;
+  border-bottom: 1px solid #29aae298;
+}
+.navbar .nav {
+  display: none;
+}
+.dados {
+  position: relative;
+  margin-top: 256px;
+  top: -160px;
+  font-size: 12px;
+  margin-left: 117px;
+  display: block;
+  width: 389px;
+}
+.dados h1 {
+  height: 12px;
+  position: relative;
+  color: aliceblue;
+  left: 0;
+  font-size: 50px;
+}
+.dados p {
+  color: aliceblue;
+  font-size: 31px;
+  padding: 14px;
+  position: absolute;
+  font-size: 20px;
+  margin-top: 37px;
+  left: 0;
+}
+.logo {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 49px;
+  left: 0;
+}
+footer{
+  background-image: url(../imagens/rodape-desktop.jpg);
+  height: 200px;
+  background-size: contain;
+}
+Lista-Cadastro-Mobile, .form, .form-1{
+  display: none;
+}
+#btn-bars{
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  font-size: 37px;
+  background-color: transparent;
+  color: #ffffff;
+  margin: 20px;
+  top: -9px;
+  left: 20px;
+  display: flex;
+  z-index: 10;
+}
+
+header.open-menu #menu-mobile{
+  position: fixed;
+  left: -90%;
+  top: 0;
+  background-color: #29abe2;
+  width: 80%;
+  height: 100%;
+  transition: 1s;
+  z-index: 9;
+}
+header.open-menu #menu-mobile{
+  left: 0;
+  width: 30%;
+  height: 240px;
+}
+header.open-menu #menu-mobile-mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.507);
+  z-index: 5;
+}
+
+
+header ul {
+  display: none;
+}
+header.open-menu #menu-mobile ul {
+  margin: 20px;
+  position: absolute;
+  display: block;
+  margin-top: 50px;
+  top: 14px;
+}
+header.open-menu #menu-mobile li {
+  list-style: none  ;
+}
+header.open-menu #menu-mobile li a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 18px;
+  display: block;
+  text-decoration: none;
+}
+#page-up{
+  display: none;
+}
+
+
+}
+
+/*Tamanho smartphones*/
+@font-face {
+  font-family:'FonteDados';
+  src: url(../Fonts/HelveticaUltraLt_0.ttf);
+}
+@media (max-width: 545px){
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+header {
+  display: block;
+  height: 570px;
+  width: 100%;
+  background-image: url(../imagens/index-image-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+main {
+  height: 942px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.navbar .nav {
+  display: none;
+}
+.dados {
+  position: relative;
+  margin-top: 256px;
+  top: -200px;
+  font-size: 12px;
+  left: -120px;
+  display: block;
+  width: 100%;
+}
+.dados h1 {
+  height: 12px;
+  position: relative;
+  color: aliceblue;
+  left: 0;
+  font-size: 50px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.dados p {
+  color: aliceblue;
+  font-size: 31px;
+  padding: 14px;
+  position: absolute;
+  font-size: 20px;
+  margin-top: 37px;
+  left: 0;
+}
+.logo {
+  position: relative;
+  display: flex;
+  right: 18px;
+  top: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #ffff;
+}
+.logo img{
+  position: relative;
+  left: -16px;
+  width: 112px;
+}
+form input {
+  width: 242px;
+}
+.cadastro h2 {
+  position: absolute;
+  top: -65px;
+  font-size: 25px;
+  color: #ffff;
+}
+.container {
+  height: 508px;
+  width: 100%;
+  background-color: #29abe2;
+  font-family:'FonteDados';
+}
+.btn-cadastrar button {
+  position: relative;
+  width: 238px;
+  margin-top: 1px;
+  height: 54px;
+  background-color: #012d51;
+  color: #29abe2;
+  font-size: 31px;
+  display: flex;
+  justify-content: center;
+}
+.cortabela{
+  display: none;
+}
+.Lista-Cadastro-Mobile span{
+  color: #29abe2;
+  margin-left: 22px
+}
+
+.form input {
+  font-size: 10px;
+  height: 6px;
+  position: relative;
+  top: -15px;
+  color: #979797;
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 20px;
+  width: 87%;
+  border-bottom: 1px solid #29abe2;
+}
+.form {
+  font-size: 2px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #29abe2;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 33px;
+  position: relative;
+}
+
+h4 {
+  position: relative;
+  margin-left: 20px;
+  top: 12px;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #012d51;
+}
+.form-1{
+  position: absolute;
+  width: 308px;
+  margin-left: 10px;
+  top: -10px;
+  height: 43px;
+  background-color: #012d5100;
+  color: #29abe2;
+  font-size: 29px;
+  justify-content: center;
+}
+.form-1 button{
+  width: 68px;
+  height: 28px;
+  top: 9px;
+  position: relative;
+  background-color: #ffffff;
+  margin: 4px;
+  margin-left: -1.1px;
+  border: 1px solid #b1b1b1;
+  color: #b1b1b1;
+}
+.form-1 button:hover{
+  border: 1px solid #29abe2;
+  color:#29abe2 ;
+}
+.tabela h3 {
+  position: absolute;
+  top: 65pc;
+  font-size: 25px;
+  color: #29abe2;
+}
+.ccc{
+  position: absolute;
+  top: 75pc;
+  display: block;
+  width: 321px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34px;
+  color: #29abe2;
+}
+Lista-Cadastro-Mobile, .form, .form-1{
+  display: inherit;
+}
+.Lista-Cadastro-Mobile{
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-image: url(../imagens/rodape-mobile.jpg);
+  height: 260px;
+  width: 100%;
+  background-size: contain;
+}
+footer .rodape {
+  display: flex;
+  position: relative;
+  top: 55px;
+  flex-flow: column-reverse;
+  text-align: center;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .rodape p{
+  font-size: 12px ;
+}
+#btn-bars{
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  font-size: 37px;
+  background-color: transparent;
+  color: #ffffff;
+  margin: 20px;
+  top: -26px;
+  left: 20px;
+  display: flex;
+  z-index: 10;
+}
+
+header.open-menu #menu-mobile{
+  position: fixed;
+  left: -90%;
+  top: 0;
+  background-color: #29abe2;
+  width: 80%;
+  height: 100%;
+  transition: 1s;
+  z-index: 9;
+}
+header.open-menu #menu-mobile{
+  left: 0;
+  width: 60%;
+  height: 240px;
+}
+header.open-menu #menu-mobile-mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.507);
+  z-index: 5;
+}
+.fa{
+  position: absolute;
+}
+
+header ul {
+  display: none;
+}
+header.open-menu #menu-mobile ul {
+  margin: 20px;
+  position: absolute;
+  display: block;
+  margin-top: 50px;
+  top: 14px;
+}
+header.open-menu #menu-mobile li {
+  list-style: none  ;
+}
+header.open-menu #menu-mobile li a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 18px;
+  display: block;
+  text-decoration: none;
+}
+
+#page-up{
+  display: none;
+}
+
+
+}
